@@ -1,0 +1,7 @@
+E:\CDAC_module\dotNet\practise\Day3\AssignmentDay3\bin\Debug\AssignmentDay3.exe.config
+E:\CDAC_module\dotNet\practise\Day3\AssignmentDay3\bin\Debug\AssignmentDay3.exe
+E:\CDAC_module\dotNet\practise\Day3\AssignmentDay3\bin\Debug\AssignmentDay3.pdb
+E:\CDAC_module\dotNet\practise\Day3\AssignmentDay3\obj\Debug\AssignmentDay3.csprojAssemblyReference.cache
+E:\CDAC_module\dotNet\practise\Day3\AssignmentDay3\obj\Debug\AssignmentDay3.csproj.CoreCompileInputs.cache
+E:\CDAC_module\dotNet\practise\Day3\AssignmentDay3\obj\Debug\AssignmentDay3.exe
+E:\CDAC_module\dotNet\practise\Day3\AssignmentDay3\obj\Debug\AssignmentDay3.pdb
