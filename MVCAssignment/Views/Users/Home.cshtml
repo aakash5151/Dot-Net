@@ -1,0 +1,22 @@
+﻿@model MVCAssignment.Models.Users
+
+@{
+    ViewBag.Title = "Home";
+}
+
+<h4><b>HomePage</b></h4>
+@{
+    string loginName = (string)Session["loginName"];
+    string fullName = (string)Session["fullName"];
+
+}
+
+<div style="margin-left:80%">
+    <button type="button" class="btn btn-danger" onclick="location.href='@Url.Action("Logout", "Users")'">Logout</button>
+    <button type="button" class="btn btn-primary" onclick="location.href='@Url.Action("Edit/"+loginName, "Users")'">Update</button>
+</div>
+
+<h4>
+    Welcome <b>@loginName</b>
+    @fullName
+</h4>

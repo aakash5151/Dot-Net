@@ -1,0 +1,78 @@
+﻿@model MVCAssignment.Models.Users
+
+@{
+    ViewBag.Title = "HomePage";
+}
+
+<h2>HomePage</h2>
+@{ 
+    string loginName = (string)Session["loginName"];
+}
+
+<h4>
+    Welcome <b>@Html.DisplayFor(model => model.loginName)</b><br>
+    @Html.DisplayFor(model => model.fullName)
+</h4>
+
+<div style="margin-left:80%">
+    <button type="button" class="btn btn-danger" onclick="location.href='@Url.Action("Logout", "Users")'">Logout</button>
+    <button type="button" class="btn btn-primary" onclick="location.href='@Url.Action("Edit/"+loginName, "Users")'">Update</button>
+</div>
+<div>
+   
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.loginName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.loginName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.password)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fullName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fullName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.emailId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.emailId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cityId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cityId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.phone)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
